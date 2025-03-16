@@ -45,3 +45,25 @@ function handleClick(event) {
       ramen.comment || "No comment";
   }
 }
+function addSubmitListener() {
+  const form = document.getElementById("new-ramen");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const newRamen = {
+      id: ramens.length + 1,
+      name: form.name.value,
+      restaurant: form.restaurant.value,
+      image: form.image.value,
+      rating: form.rating.value,
+      comment: form.comment.value,
+    };
+    ramens.push(newRamen);
+    const img = document.createElement("img");
+    img.src = newRamen.image;
+    img.alt = newRamen.name;
+    img.dataset.id = newRamen.id;
+    img.addEventListener("click", handleClick);
+    document.getElementById("ramen-menu").appendChild(img);
+    form.reset();
+  });
+}
