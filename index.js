@@ -33,3 +33,15 @@ function displayRamens() {
     ramenMenu.appendChild(img);
   });
 }
+function handleClick(event) {
+  const ramenId = event.target.dataset.id;
+  const ramen = ramens.find((r) => r.id == ramenId);
+  if (ramen) {
+    document.getElementById("ramen-name").textContent = ramen.name;
+    document.getElementById("ramen-restaurant").textContent = ramen.restaurant;
+    document.getElementById("ramen-rating").textContent =
+      ramen.rating || "Not rated";
+    document.getElementById("ramen-comment").textContent =
+      ramen.comment || "No comment";
+  }
+}
