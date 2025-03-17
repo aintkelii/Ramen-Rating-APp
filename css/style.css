@@ -1,0 +1,80 @@
+container{
+    margin: 0px;
+    padding: 0px;
+    height:1500px;
+}
+.upperHeading{
+    margin: 0px;
+    padding: 1px;
+    background-color: bisque;
+    height: 100px;
+}
+.theeText{
+    margin: 0px;
+    padding: 0px;
+}
+.text{
+    text-align: center;
+    font-size:xx-large;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    background-color: gray;
+    height: 100vh;
+}
+img{
+    height: 50px;
+    border-radius: 10px;
+    border: solid 2px;
+}
+.myImages{
+    margin: 30px;
+
+}
+.images{
+    color: blue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.inputs{
+    margin: 150px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+.theeInputs{
+    align-items: center;
+
+}
+input{
+    border: solid 3px;
+    border-radius: 10px;
+    width: 300px;
+    height: 37px;
+    display: block;
+    margin: 30px;
+    margin-left: 41%;
+}
+.texxt{
+    text-align: center;
+    height: 300px;
+}
+.card-display{
+    font-size: 20px;
+    text-align: center;
+    display:none;
+    flex-direction: column;
+    border: solid 2px;
+    height: 300px;
+    width: 398px;
+    background-color: transparent;
+    margin-top: 100px;
+    margin-left: 770px;
+    border-radius: 15px;
+
+}
