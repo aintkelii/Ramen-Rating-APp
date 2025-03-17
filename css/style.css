@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+#ramen-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#ramen-menu img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.1);
+}
+
+#ramen-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#ramen-detail h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+#ramen-detail h3 {
+    color: #666;
+    font-size: 18px;
+}
+
+#ramen-detail p {
+    color: #444;
+    font-size: 16px;
+}
+
+#new-ramen {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#new-ramen input,
+#new-ramen textarea,
+#new-ramen button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#new-ramen button {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#new-ramen button:hover {
+    background-color: #ff4c4c;
+}
