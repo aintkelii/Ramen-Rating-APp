@@ -6,7 +6,7 @@
 .upperHeading{
     margin: 0px;
     padding: 1px;
-    background-color: bisque;
+    background-color:red;
     height: 100px;
 }
 .theeText{
@@ -22,7 +22,7 @@ body{
     margin: 0px;
     padding: 0px;
     margin-top: 0px;
-    background-color: gray;
+    background-color: lightcoral;
     height: 100vh;
 }
 img{
@@ -31,11 +31,13 @@ img{
     border: solid 2px;
 }
 .myImages{
-    margin: 30px;
+    margin: 100px;
+display: flexbox;
+flex-direction: column-reverse;
 
 }
 .images{
-    color: blue;
+    color: lightcoral;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -66,15 +68,37 @@ input{
 }
 .card-display{
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     display:none;
-    flex-direction: column;
+    flex-direction: row;
     border: solid 2px;
     height: 300px;
     width: 398px;
     background-color: transparent;
     margin-top: 100px;
     margin-left: 770px;
-    border-radius: 15px;
+    border-radius: 50px;
 
+}
+h1{
+    background-color: lightcoral;
+}
+button{
+    margin-top: 20px;
+    margin-left: 720px;
+    height: 100px;
+    width: 100px;
+    color: blue;
+    background-color: lightcoral;
+    border: 0px;
+    border-color: red;
+}
+#new-comment{
+    margin-left: 670px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    
 }
